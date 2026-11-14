@@ -1,0 +1,185 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fc;
+    color: #26334a;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #17253d;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #a5b4fc;
+}
+
+/* Home Section */
+.home {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background-color: #dfe7fb;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.intro {
+    color: #5865b5;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.home h1 {
+    font-size: 48px;
+    color: #17253d;
+    margin: 10px 0;
+}
+
+.home h2 {
+    color: #5865b5;
+    margin-bottom: 15px;
+}
+
+.home p {
+    margin-bottom: 22px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #5865b5;
+    color: white;
+    padding: 11px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #17253d;
+}
+
+/* Common Sections */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #17253d;
+    margin-bottom: 25px;
+}
+
+/* About Section */
+.education {
+    margin-top: 25px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #e9edfa;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.skill {
+    background-color: #17253d;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 7px;
+    min-width: 130px;
+}
+
+/* Projects Section */
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin: 18px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #5865b5;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #e9edfa;
+}
+
+/* Footer */
+footer {
+    background-color: #17253d;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .section {
+        padding: 40px 6%;
+    }
+}
